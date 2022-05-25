@@ -27,12 +27,19 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+    <PmButton type="primary">Button</PmButton>
   </div>
 </template>
 
 <script>
+import PmButton from './ui/button/PmButton'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    PmButton
+  },
   props: {
     msg: String
   }
